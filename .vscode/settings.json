@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+
+    "[toml]": {
+        "editor.formatOnSave": false
+    }
+}

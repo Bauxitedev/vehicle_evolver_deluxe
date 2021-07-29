@@ -1,0 +1,116 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      background: white;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    canvas {
+      background-color: white;
+    }
+
+    h1 {
+      display: inline-block;
+    }
+
+    canvas {
+      border: 1px solid white;
+      border-radius: 0.5em;
+      box-shadow: 0 0 0.25em black;
+    }
+
+    /* Progress bar from https://stackoverflow.com/a/60572715 */
+
+    #loading {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .progress-line,
+    .progress-line:before {
+      height: 3px;
+      width: 100%;
+      margin: 0;
+    }
+
+    .progress-line {
+      background-color: #b3d4fc;
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    .progress-line:before {
+      background-color: #3f51b5;
+      content: '';
+      -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    @-webkit-keyframes running-progress {
+      0% {
+        margin-left: 0px;
+        margin-right: 100%;
+      }
+
+      50% {
+        margin-left: 25%;
+        margin-right: 0%;
+      }
+
+      100% {
+        margin-left: 100%;
+        margin-right: 0;
+      }
+    }
+
+    @keyframes running-progress {
+      0% {
+        margin-left: 0px;
+        margin-right: 100%;
+      }
+
+      50% {
+        margin-left: 25%;
+        margin-right: 0%;
+      }
+
+      100% {
+        margin-left: 100%;
+        margin-right: 0;
+      }
+    }
+  </style>
+
+
+  <!-- This prevents zooming on mobile: https://stackoverflow.com/a/11689448 -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+
+  <title>Vehicle Evolver Deluxe - by Bauxitedev</title>
+</head>
+
+<script type="module">
+  import init from './target/wasm.js'
+    init()
+  </script>
+
+<body>
+  <h1>Vehicle Evolver Deluxe</h1> &bull;
+  <span>made by Bauxitedev &bull; source code: [TODO]</span><br />
+  <p>Note: this will run really slow on mobile (may not even work in Chrome on Android, although Fennec is confirmed to
+    work).</p>
+  <br />
+
+  <div id="loading">
+    <!-- Progress bar from https://stackoverflow.com/a/60572715  -->
+    <div class="progress-line"></div>
+    <h2>Loading....... Please be patient...</h2>
+  </div>
+
+
+</body>
+
+</html>
