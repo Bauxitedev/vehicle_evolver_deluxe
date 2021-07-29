@@ -35,8 +35,7 @@ crossbeam-channel = "0.5.1"
 lerp = { version = "0.4", features = ["derive"] }
 num = "0.4.0"
 instant = "0.1.9"
-# TODO use the latest version of bevy_rapier instead of this branch!
-bevy_rapier2d = { git = "https://github.com/dimforge/bevy_rapier", branch = "joint_removal", features=["enhanced-determinism"]} # fixes the crash when despawning ents with joints
+bevy_rapier2d = { git = "https://github.com/dimforge/bevy_rapier", branch = "master", features=["enhanced-determinism"]} # fixes the crash when despawning ents with joints
 ndarray = "0.15.3"
 num_enum = "0.5.1"
 derive-new = "0.5.9"

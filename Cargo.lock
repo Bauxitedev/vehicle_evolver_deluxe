@@ -582,7 +582,7 @@ dependencies = [
 [[package]]
 name = "bevy_rapier2d"
 version = "0.10.2"
-source = "git+https://github.com/dimforge/bevy_rapier?branch=joint_removal#0c378c89365efcc13e80dd78d9968a60b75b544e"
+source = "git+https://github.com/dimforge/bevy_rapier?branch=master#2b9ae4cd9f31b8a4d20205568e15acf013d6523c"
 dependencies = [
  "bevy",
  "nalgebra 0.27.1",

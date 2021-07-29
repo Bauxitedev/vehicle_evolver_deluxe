@@ -2,7 +2,7 @@
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W2X7WN)
 
-[TODO gif here]
+![Demo](promo/vehicles.gif)
 
 This is a simulation that uses AI (to be specific: [genetic algorithms](https://en.wikipedia.org/wiki/Genetic_algorithm)) to try to build better and better vehicles. The vehicles have to overcome an obstacle course, starting with some slight hills, followed by steeper hills, and finally some jumps. The vehicles are made out of panels and wheels, connected together, similar to the game [Besiege](https://store.steampowered.com/app/346010/Besiege/), except in 2D.
 
