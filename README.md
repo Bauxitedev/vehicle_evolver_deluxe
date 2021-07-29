@@ -6,7 +6,7 @@
 
 This is a simulation that uses AI (to be specific: [genetic algorithms](https://en.wikipedia.org/wiki/Genetic_algorithm)) to try to build better and better vehicles. The vehicles have to overcome an obstacle course, starting with some slight hills, followed by steeper hills, and finally some jumps. The vehicles are made out of panels and wheels, connected together, similar to the game [Besiege](https://store.steampowered.com/app/346010/Besiege/), except in 2D.
 
-Try the live web demo here: [TODO] (needs a fast computer, on mobile browsers it'll run really slow, although Fennec seems faster than Chrome)
+[Try the live web demo here.](https://bauxitedev.github.io/vehicle_evolver_deluxe/index.html) (needs a fast computer, on mobile browsers it'll run really slow, although Fennec seems faster than Chrome)
 
 I made a video explaining how it works in-depth: [TODO]. See the section below for a short summary.
 
