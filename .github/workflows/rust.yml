@@ -1,0 +1,42 @@
+name: Rust
+
+on:
+  push:
+    branches: [ master ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - uses: actions/checkout@v2
+    
+    - name: Setup
+      run: cargo install --force cargo-make
+      
+    - name: Build
+      run: cargo make build-web -p release
+      
+    - name: Setup for publish
+      run: |
+        mkdir public
+        mkdir public/target
+        cp index.html public/
+        cp target/wasm.js public/target/
+        cp target/wasm_bg.wasm public/target/
+        cp -R assets/ public/
+      
+    - name: Publish
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+      
+
+ #   - name: Debugging with tmate
+ #     uses: mxschmitt/action-tmate@v3.5
