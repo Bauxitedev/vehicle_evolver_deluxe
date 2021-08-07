@@ -8,7 +8,7 @@ This is a simulation that uses AI (to be specific: [genetic algorithms](https://
 
 [Try the live web demo here.](https://bauxitedev.github.io/vehicle_evolver_deluxe/index.html) (needs a fast computer, on mobile browsers it'll run really slow, although Fennec seems faster than Chrome)
 
-I made a video explaining how it works in-depth: [TODO]. See the section below for a short summary.
+[I made an in-depth video explaining how it works here](https://www.youtube.com/watch?v=DlRNdCCSSyo). See the section below for a short summary.
 
 ## Genetic algorithms
 
